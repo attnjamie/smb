@@ -1,0 +1,64 @@
+/* GLOBAL RULES  */
+
+.parallax-hero {
+  margin: -1rem 0 2rem 0;
+  position: relative;
+  text-align: left;
+  height: 600px;
+  background: url('../img/SMB_Icon_Black.png') 50% 0 no-repeat fixed;
+  background-size: contain !important;
+}
+
+.
+.parallax-hero-text {
+  height: 458px; 
+  position: absolute; 
+  text-align: center; 
+  top: 50%; 
+  width: 100%;
+}
+.parallax-hero-text h1 {
+  color: white;
+}
+
+.center {
+  width: 100%;
+  text-align: center;
+}
+.content-wrapper {
+  padding: 2em;
+}
+
+.main-content h1, .content-wrapper p, .content-wrapper h3, .content-wrapper h4 {
+  color: #fff;
+}
+
+.main-content {
+  margin: 0 auto;
+  background: #000;
+}
+.contact {
+  margin: 0 auto;
+  background: #fff;
+}
+
+.sponsors {
+  color: #999;
+}
+
+.hollow {
+  background: transparent;
+}
+
+.booking-btn {
+  border: 1px solid black;
+  border-radius: 5px;
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+}
+
+.booking-btn:hover {
+  background-color: black;
+}
