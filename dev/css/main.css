@@ -1,7 +1,7 @@
 /* GLOBAL RULES  */
 
 .parallax-hero {
-  margin: -1rem 0 2rem 0;
+  margin: -1rem 0 0 0;
   position: relative;
   text-align: left;
   height: 600px;
@@ -50,6 +50,17 @@
   background: transparent;
 }
 
+.section-image {
+  height: 360px;
+  background: url("../img/smbb-bg.jpg") no-repeat center center fixed;
+  background-size: cover;
+  text-align: center;
+}
+
+.section-image h1 {
+  position: relative;
+  top: 50%;
+}
 .booking-btn {
   border: 1px solid black;
   border-radius: 5px;
@@ -61,4 +72,8 @@
 
 .booking-btn:hover {
   background-color: black;
+}
+
+.shrink-topbar{
+  padding: 17px 0.9375rem 62px 0.9375rem !important; 
 }

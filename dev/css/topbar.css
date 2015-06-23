@@ -1,0 +1,258 @@
+.top-bar-container, .tab-bar {
+  margin-bottom: rem-calc(32);
+}
+
+.top-bar .name h1 a {
+  font-weight: 500;
+}
+
+/*
+   HEADER SECTION
+   ========================================================================== */
+.header-section {
+  -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.4);
+  position: fixed;
+  z-index: 999;
+  min-width: 100%;
+}
+
+.contain-to-grid {
+  background-color: rgba(255, 255, 255, 0.97);
+}
+
+.header-fill {
+  background: #fff;
+  height: 135px;
+}
+
+.header-fill .tablet-mobile-logo img {
+  padding-top: 30px;
+}
+
+.shrink-topbar {
+  padding: 17px 0.9375rem 62px 0.9375rem !important;
+}
+
+.shrink-topbar ul.title-area img {
+  margin: -1em 0 0 0 !important;
+  max-height: 75px !important;
+  transition: all 0.5s ease 0.1s;
+}
+
+.full-width {
+  min-width: 100%;
+}
+
+p {
+  line-height: 3rem;
+  padding-bottom: 30px;
+}
+
+/*
+   CONTENT SECTION
+   ========================================================================== */
+.content-section .main-content {
+  margin-top: 35px;
+}
+
+/*
+   FOOTER SECTION
+   ========================================================================== */
+.footer-section {
+  background: #333;
+  min-height: 100px;
+}
+
+.footer-section p {
+  color: #fff;
+  margin-top: 50px;
+}
+
+/*
+   TOPBAR NAVGATION
+   ========================================================================== */
+.top-bar {
+  background: none;
+  padding: 45px 0.9375rem 90px 0.9375rem;
+  transition: all 0.5s ease 0.1s;
+}
+
+.top-bar ul.title-area img {
+  margin: -2em 0 0 0;
+  max-height: 100px;
+  width: auto;
+  transition: all 0.5s ease 0.1s;
+}
+
+.top-bar .top-bar-section ul {
+  background: none;
+}
+
+.top-bar .top-bar-section ul li a:not(.button), .top-bar .top-bar-section ul li.active a:not(.button) {
+  background: none;
+  line-height: 30px;
+  font-size: 12px;
+  padding: 0;
+  margin: 5px 0 0 0;
+  text-transform: uppercase;
+}
+
+.top-bar .top-bar-section ul li a:not(.button):hover {
+  background: none;
+  border-bottom: 2px solid #ef4523;
+  color: #222;
+}
+
+.top-bar .top-bar-section ul li.active a:not(.button) {
+  border-bottom: 2px solid #ef4523;
+  color: #222;
+}
+
+.top-bar .top-bar-section ul li.active a:not(.button):hover {
+  background: none;
+}
+
+.top-bar .top-bar-section ul li {
+  background: none;
+  margin-left: 20px;
+}
+
+.top-bar .top-bar-section ul li a {
+  color: #888;
+}
+
+.top-bar .top-bar-section ul li:hover:not(.has-form) > a {
+  color: #333;
+}
+
+.top-bar .top-bar-section li ul.dropdown {
+  background: #fff;
+  border: 1px solid #ddd;
+  color: #888;
+}
+
+.top-bar .top-bar-section li ul.dropdown li {
+  border-bottom: 1px solid #ddd;
+  margin: 0;
+  padding: 5px 15px 5px 15px;
+}
+
+.top-bar .top-bar-section .dropdown li:not(.has-form):not(.active) > a:not(.button) {
+  background: none;
+  color: #888;
+}
+
+.top-bar .top-bar-section li ul.dropdown li a:not(.button):hover, .top-bar .top-bar-section li ul.dropdown li a:not(.button) {
+  background: none;
+  color: #222;
+  border-bottom: none;
+  padding: 20px -4px 40px 45px;
+}
+
+.top-bar .top-bar-section ul.dropdown li:hover:not(.has-form) > a:not(.button) {
+  background: none;
+  color: #222;
+}
+
+.top-bar .has-dropdown > a:after {
+  border-color: rgba(0, 0, 0, 0.5) transparent transparent;
+  margin-top: -5px;
+}
+
+.top-bar .top-bar-section > ul > .divider, .top-bar .top-bar-section > ul > [role="separator"] {
+  display: none;
+}
+
+@media all and (max-width: 40.063em) {
+  .header-fill {
+    height: 0;
+  }
+  .tab-bar {
+    background: #888;
+    transition: all 0.5s ease 0.1s;
+    margin-bottom: 0;
+  }
+  .tab-bar ul.title-area img {
+    margin: -10px 0 0 0;
+  }
+  .tab-bar .tab-bar-section ul {
+    background: none;
+  }
+  .tab-bar .tab-bar-section ul li a:not(.button), .tab-bar .tab-bar-section ul li.active a:not(.button) {
+    background: none;
+    line-height: 30px;
+    font-size: 12px;
+    padding: 0;
+    margin: 5px 0 0 0;
+    text-transform: uppercase;
+  }
+  .tab-bar .tab-bar-section ul li a:not(.button):hover {
+    background: none;
+    border-bottom: 2px solid #ef4523;
+    color: #222;
+  }
+  .tab-bar .tab-bar-section ul li.active a:not(.button) {
+    border-bottom: 2px solid #ef4523;
+    color: #222;
+  }
+  .tab-bar .tab-bar-section ul li.active a:not(.button):hover {
+    background: none;
+  }
+  .tab-bar .tab-bar-section ul li {
+    background: none;
+    margin-left: 30px;
+  }
+  .tab-bar .tab-bar-section ul li a {
+    color: #888;
+  }
+  .tab-bar .tab-bar-section ul li:hover:not(.has-form) > a {
+    color: #333;
+  }
+  .tab-bar .tab-bar-section li ul.dropdown {
+    background: #fff;
+    border: 1px solid #ddd;
+    color: #888;
+  }
+  .tab-bar .tab-bar-section li ul.dropdown li {
+    border-bottom: 1px solid #ddd;
+    margin: 0;
+    padding: 5px 15px 5px 15px;
+  }
+  .tab-bar .tab-bar-section li ul.dropdown li a:not(.button):hover, .tab-bar .tab-bar-section li ul.dropdown li a:not(.button) {
+    background: none;
+    color: #222;
+    border-bottom: none;
+    padding: 20px -4px 40px 45px;
+  }
+  .tab-bar .tab-bar-section ul.dropdown li:hover:not(.has-form) > a:not(.button) {
+    background: none;
+    color: #222;
+  }
+  .tab-bar .has-dropdown > a:after {
+    border-color: rgba(0, 0, 0, 0.5) transparent transparent;
+    margin-top: -5px;
+  }
+  #homepage-hero {
+    margin: -2rem 0 2rem 0 !important;
+  }
+}
+
+#aha-container {
+  margin-left: 1rem;
+}
+
+#aha-logo {
+  margin-top: -25%;
+  height: 5.5rem !important;
+}
+
+@media all and (min-width: 40.063em) and (max-width: 64em) {
+  /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+  .top-bar-section > ul > .divider, .top-bar-section > ul > [role="separator"] {
+    display: none;
+  }
+  .top-bar .top-bar-section ul li {
+    margin: 20px;
+  }
+}

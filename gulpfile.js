@@ -42,6 +42,13 @@ gulp.task('css', function() {
     .pipe(gulp.dest('build/css'));
 });
 
+
+// gulp.task('sass', function () {
+//   gulp.src('dev/css/*.scss')
+//     .pipe(sass().on('error', sass.logError))
+//     .pipe(gulp.dest('build/css'));
+// });
+
 gulp.task('img', function() {
   gulp.src('dev/img/*.*')
     .pipe(gulp.dest('build/img'));
@@ -61,7 +68,7 @@ gulp.task('minify-html', function() {
 
 // Task to copy HTML directly, without minifying
 gulp.task('copy-html', function() {
-  return gulp.src('index.html')
+  return gulp.src('dev/html/**.html')
   .pipe(gulp.dest('build/'))
   .pipe(connect.reload())
 });
@@ -77,11 +84,11 @@ gulp.task('watch', ['serve'], function() {
   gulp.watch(['dev/*.js'],['js']);
   gulp.watch(['dev/css/*.css'], ['css']);
   gulp.watch(['dev/img/*.**'], ['img']);
-  gulp.watch(['index.html'], ['copy-html']);
+  gulp.watch(['dev/html/*.html'], ['copy-html']);
 });
 
 gulp.task('build', ['clean'], function() {
-  gulp.start('js', 'css', 'img', 'copy-html', 'minify-html');
+  gulp.start('js', 'sass', 'css', 'img', 'copy-html', 'minify-html');
 });
 
 gulp.task('default', ['serve','watch']);
